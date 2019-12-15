@@ -1,10 +1,15 @@
 {
-  "name": "adonis-gcs",
+  "name": "adonis-google-cloud-storage",
   "version": "1.0.0",
   "description": "Node.js package for interacting with Google Cloud Storage in an Adonis.js application",
   "main": "index.js",
   "scripts": {
     "test": "test"
+  },
+  "dependencies": {
+    "@google-cloud/storage": "^2.5.0",
+    "mime": "^2.4.4",
+    "mkdirp": "^0.5.1"
   },
   "repository": {
     "type": "git",
@@ -12,9 +17,7 @@
   },
   "keywords": [
     "adonisjs",
-    "google",
-    "cloud",
-    "storage",
+    "google-cloud-storage",
     "nodejs"
   ],
   "author": "Obapelumi",
