@@ -23,7 +23,9 @@ class AdonisGCS extends Gcs {
 
     const fileType = mime.getType(filePath)
 
-    this.uploadFileToGCS(fileName)
+    this.uploadFileToGCS(fileName).then(() => {
+      FileStorage.unlinkSync(filePath)
+    })
 
     return { fileName, fileType }
   }
